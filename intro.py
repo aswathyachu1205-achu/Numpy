@@ -162,24 +162,24 @@ import numpy as np
 
 # print(arr[1:4,0:2])
 
-arr_2 = np.array([4,3,5,7,2,10])
+# arr_2 = np.array([4,3,5,7,2,10])
 
-print(arr_2.argmax()) # returns the index of the largest element
+# print(arr_2.argmax()) # returns the index of the largest element
 
-print(arr_2.argmin()) # returns the index of the smallest element
+# print(arr_2.argmin()) # returns the index of the smallest element
 
-print(arr_2.argsort())
+# print(arr_2.argsort())
 
 
 # arr_3 = np.array([[1,2,3,4],[4,5,6,7],[8,10,12,14]])
 # print(arr_3.argmax())  # 11 return the index after flatten the 2d array.
 
-arr_3 = np.array([[1,2,3,4],[4,5,6,7],[8,10,12,14]])
-print(np.where(arr_3 > 5))
-#      row index                        column index
-#(array([1, 1, 2, 2, 2, 2]), array([2, 3, 0, 1, 2, 3]))
+# arr_3 = np.array([[1,2,3,4],[4,5,6,7],[8,10,12,14]])
+# print(np.where(arr_3 > 5))
+# #      row index                        column index
+# #(array([1, 1, 2, 2, 2, 2]), array([2, 3, 0, 1, 2, 3]))
 
-print(np.where(arr_3 > 5 , "pass","fail"))
+# print(np.where(arr_3 > 5 , "pass","fail"))
 # np.where(condition.value_if_true,value_if_false) # replacing condition
 # [['fail' 'fail' 'fail' 'fail']
  #['fail' 'fail' 'pass' 'pass']
@@ -199,6 +199,51 @@ print(np.where(arr_3 > 5 , "pass","fail"))
 # np.where(condition)
 # use to positioning the elements which satisfy the condition
 # print(np.where(arr_2 > 5)) # (array([3, 5]),)
+
+
+arr = np.array([[30,10,90],
+                [20,40,70],
+                [25,45,80]])
+
+# print(arr[0:2,0:2])
+# print(arr[:,0:2])
+# print(arr[0:2,:])
+
+# ==========================
+
+# print(arr[::-1,:])
+# print(arr[:,::-1])
+# print(arr[0:2,::-1])
+# print(arr[::-1,::-1]) # both column and row reverses
+
+# using sorting
+
+# print(np.sort(arr))
+# print(np.sort(arr)[:,::-1])
+# # print(np.sort(arr)[::-1,::-1])
+
+# # print(np.sort(arr))
+# # print(np.sort(arr,axis= 0)) # axis =  0 (column) axis = 1 (row)
+# # print(np.sort(arr)[:,::-1]) # : - row select, column reverses
+# # print(np.sort(arr)[::-1,:]) # :: -1 - column select,row reverses
+
+
+new  = np.array([4.66,5.35,6.98,7.0])
+
+print(np.floor(new))
+# returns the largest integers in the number given
+print(np.round(new))
+# round the number in the nearest integer by default
+print(np.ceil(new)) 
+# return the smallest in the number given
+
+
+
+
+
+
+
+
 
 
 
